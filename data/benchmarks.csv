@@ -1,0 +1,7 @@
+Linguagem;Teste;Tempo (s);Uso de RAM (MB);Linhas de Código
+Julia;Multiplicação de Matrizes;1.02;231.57;4
+Julia;Geração de Números Primos;0.0038;0.74;8
+Julia;Simulação de Monte Carlo;0.0083;0.03;7
+Python;Multiplicação de Matrizes;;;;
+Python;Geração de Números Primos;;;;
+Python;Simulação de Monte Carlo;;;;
