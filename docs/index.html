@@ -7,28 +7,35 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0d1117;
-      color: #f0f6fc;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 40px 20px;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 2.5em;
       color: #58a6ff;
+      font-size: 2.8rem;
+      margin-bottom: 0.2rem;
     }
 
     h2 {
-      font-size: 1.3em;
-      color: #c9d1d9;
-      margin-bottom: 30px;
+      font-size: 1.4rem;
+      color: #8b949e;
+      margin-bottom: 2rem;
     }
 
-    p, li {
-      font-size: 1em;
-      color: #c9d1d9;
-      margin: 0.5em 0;
+    .section {
+      background-color: #161b22;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 750px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
     }
 
     ul {
@@ -36,60 +43,63 @@
       padding: 0;
     }
 
-    ul li::before {
-      content: '➤ ';
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    .icon {
       color: #58a6ff;
+      margin-right: 0.5rem;
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1em;
-      margin-top: 2em;
-    }
-
-    a.button {
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 6px;
       background-color: #238636;
       color: white;
+      font-size: 1rem;
       text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: background-color 0.3s ease;
     }
 
-    a.button:hover {
+    .button:hover {
       background-color: #2ea043;
     }
 
-    footer {
-      margin-top: 3em;
-      font-size: 0.9em;
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
       color: #8b949e;
     }
   </style>
 </head>
 <body>
+
   <h1>Júlia vs Python</h1>
   <h2>Relatório de benchmark e comparação de desempenho</h2>
 
-  <p>Este projeto avalia o desempenho entre Julia e Python usando simulações numéricas e benchmarking:</p>
-  <ul>
-    <li>Multiplicação de matrizes</li>
-    <li>Geração de números primos</li>
-    <li>Simulação de Monte Carlo</li>
-  </ul>
+  <div class="section">
+    <p>Este projeto avalia o desempenho entre Julia e Python usando simulações numéricas e benchmarking:</p>
+    <ul>
+      <li><span class="icon">➤</span>Multiplicação de matrizes</li>
+      <li><span class="icon">➤</span>Geração de números primos</li>
+      <li><span class="icon">➤</span>Simulação de Monte Carlo</li>
+    </ul>
 
-  <div class="buttons">
-    <a href="/final_report.pdf" class="button" download>📄 Baixar relatório em PDF</a>
-    <a href="/data/benchmarks.csv" class="button" download>📊 Baixar dados CSV</a>
-    <a href="/prompts/ia_interaction_log.md" class="button" target="_blank">🤖 Registro de interação de IA</a>
+    <div style="margin-top: 2rem;">
+      <a class="button" href="/final_report.pdf" download> Baixar relatório em PDF</a>
+      <a class="button" href="/data/benchmarks.csv" download> Baixar dados CSV</a>
+      <a class="button" href="/prompts/ia_interaction_log.md" target="_blank"> Registro de interação de IA</a>
+    </div>
   </div>
 
-  <footer>
+  <div class="footer">
     Criado por Sid Schaedler — abril de 2025
-  </footer>
+  </div>
+
 </body>
 </html>
-
