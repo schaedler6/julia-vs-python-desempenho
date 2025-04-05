@@ -1,74 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julia vs Python - Benchmark Report</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      margin-top: 0;
-    }
-    a.button {
-      display: inline-block;
-      margin: 1rem 0.5rem;
-      padding: 0.7rem 1.2rem;
-      background-color: #2980b9;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    a.button:hover {
-      background-color: #1f6391;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Julia vs Python – Desempenho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f1117;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #00d9ff;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 1rem auto;
+            max-width: 700px;
+        }
+        .badges img {
+            margin: 0.3rem;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #1f8ef1;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .buttons a:hover {
+            background-color: #0d6efd;
+        }
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Julia vs Python</h1>
-    <p>Benchmark Report & Performance Comparison</p>
-  </header>
-  <main>
-    <p>This project evaluates performance between Julia and Python using numerical simulations and benchmarking:</p>
-    <ul>
-      <li>Matrix Multiplication</li>
-      <li>Prime Number Generation</li>
-      <li>Monte Carlo Simulation</li>
-    </ul>
+    <h1>Julia vs Python – Desempenho</h1>
+    <div class="badges">
+        <img src="https://img.shields.io/github/last-commit/schaedler6/julia-vs-python-desempenho?style=flat-square" alt="Último Commit">
+        <img src="https://img.shields.io/github/license/schaedler6/julia-vs-python-desempenho?style=flat-square" alt="Licença">
+        <img src="https://img.shields.io/github/repo-size/schaedler6/julia-vs-python-desempenho?style=flat-square" alt="Tamanho do repositório">
+    </div>
+    <p>Este projeto avalia o desempenho entre Julia e Python usando simulações numéricas e benchmarking em três frentes principais:</p>
+    <p><strong>🧮 Multiplicação de Matrizes · 🔢 Crivo de Números Primos · 🎲 Simulação de Monte Carlo</strong></p>
 
-    <a href="final_report.md" class="button">📄 View Markdown Report</a>
-    <a href="../final_report.pdf" class="button">📄 Download PDF Report</a>
-    <a href="../data/benchmarks.csv" class="button">📊 Download CSV Data</a>
-    <a href="../prompts/ia_interaction_log.md" class="button">🤖 AI Interaction Log</a>
-  </main>
-  <footer>
-    <p>Created by Sid Schaedler — April 2025</p>
-  </footer>
+    <div class="buttons">
+        <a href="final_report.md">📊 Exibir relatório de remarcação</a>
+        <a href="final_report.pdf">📥 Baixar relatório em PDF</a>
+        <a href="../data/benchmarks.csv">📂 Baixar dados CSV</a>
+        <a href="../prompts/ia_interaction_log.md">🧠 Registro de interação com IA</a>
+    </div>
+
+    <footer>
+        Criado por Sid Schaedler — abril de 2025
+    </footer>
 </body>
 </html>
